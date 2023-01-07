@@ -11,8 +11,12 @@ class a1screen extends StatefulWidget {
 class _a1screenState extends State<a1screen> {
   @override
   Widget build(BuildContext context) {
-    return SafeArea(
-      child: Center(
+    return Scaffold(
+      appBar: AppBar(
+        elevation: 5.0,
+        title: Text('A1 Niveau'),
+      ),
+      body: Center(
         child: Column(
           children: [Text('a1 screen')],
         ),

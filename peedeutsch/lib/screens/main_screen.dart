@@ -29,7 +29,11 @@ class _MainScreenState extends State<MainScreen> {
         itemBuilder: (BuildContext context, int index) {
           return Row(mainAxisAlignment: MainAxisAlignment.center, children: [
             TextButton(
-              child: Text('Entry ${entries[index]}'),
+              style: TextButton.styleFrom(
+                primary: Colors.blue,
+                onSurface: Colors.red,
+              ),
+              child: Text('Niveau ${entries[index]}'),
               onPressed: () {
                 Navigator.push(
                     context,

@@ -11,7 +11,9 @@ class Vocab extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       theme: ThemeData(
-          primaryColor: Colors.amberAccent,
+          brightness: Brightness.dark,
+          appBarTheme: AppBarTheme(backgroundColor: Colors.deepPurpleAccent),
+          primaryColor: Colors.deepPurpleAccent,
           scaffoldBackgroundColor: Colors.white),
       home: MainScreen(),
     );
