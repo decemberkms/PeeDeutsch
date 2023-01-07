@@ -1,10 +1,11 @@
 import 'package:flutter/material.dart';
+
 import 'package:peedeutsch/screens/main_screen.dart';
 
 void main(List<String> args) => runApp(Vocab());
 
 class Vocab extends StatelessWidget {
-  // const Vocab({super.key});
+  const Vocab({super.key});
 
   @override
   Widget build(BuildContext context) {
