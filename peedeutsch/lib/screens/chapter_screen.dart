@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:peedeutsch/screens/vocab_screen.dart';
 import 'package:peedeutsch/components/contents_holder.dart';
-import 'package:peedeutsch/vocab/vocabStorage.dart';
 
 class ChapterScreen extends StatefulWidget {
   // const VocabScreen({super.key});
@@ -17,6 +16,8 @@ class ChapterScreen extends StatefulWidget {
 
 class _ChapterScreenState extends State<ChapterScreen> {
   late List newList;
+  late String selectedchapterNumber;
+
   @override
   void initState() {
     // TODO: implement initState
@@ -53,11 +54,23 @@ class _ChapterScreenState extends State<ChapterScreen> {
                       ),
                     ),
                     onPressed: () {
+                      if (index == 0) {
+                        selectedchapterNumber = 'Chapter 1';
+                      } else if (index == 1) {
+                        selectedchapterNumber = 'Chapter 2';
+                      } else if (index == 2) {
+                        selectedchapterNumber = 'Chapter 3';
+                      } else if (index == 3) {
+                        selectedchapterNumber = 'Chapter 4';
+                      }
                       Navigator.push(context, MaterialPageRoute(
                         builder: (context) {
                           // Here index is the chapter
-                          return VocabScreen(newList[index], index,
-                              widget._vocabSet['Chapter 1']!);
+                          return VocabScreen(
+                              newList[index],
+                              index,
+                              selectedchapterNumber,
+                              widget._vocabSet[selectedchapterNumber]!);
                         },
                       ));
                     },

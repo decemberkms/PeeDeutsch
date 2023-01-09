@@ -13,12 +13,13 @@ class MainScreen extends StatefulWidget {
 
 class _MainScreenState extends State<MainScreen> {
   final List<String> entries = <String>['A1 Niveau', 'A2 Niveau', 'B1 Niveau'];
-  late Map<String, List<ContentHolder>> vocabSet;
   final List colorCodes = [
     Colors.purple.shade200,
     Colors.blue.shade200,
     Colors.green.shade200
   ];
+
+  late Map<String, List<ContentHolder>> vocabSet;
 
   @override
   Widget build(BuildContext context) {
@@ -59,16 +60,16 @@ class _MainScreenState extends State<MainScreen> {
                       ),
                     ),
                     onPressed: () {
+                      if (index == 0) {
+                        vocabSet = VocabDict.a1Vocab;
+                      } else if (index == 1) {
+                        vocabSet = VocabDict.a2Vocab;
+                      } else if (index == 2) {
+                        vocabSet = VocabDict.b1Vocab;
+                      }
                       Navigator.push(context, MaterialPageRoute(
                         builder: (context) {
                           // Index also shows the selected Level - 0 A1, 1 A2, 2 B1
-                          if (index == 0) {
-                            vocabSet = VocabDict.a1Vocab;
-                          } else if (index == 1) {
-                            vocabSet = VocabDict.a2Vocab;
-                          } else if (index == 2) {
-                            vocabSet = VocabDict.b1Vocab;
-                          }
                           return ChapterScreen(entries[index], index, vocabSet);
                         },
                       ));
