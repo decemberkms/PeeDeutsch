@@ -1,5 +1,6 @@
 import 'package:flip_card/flip_card.dart';
 import 'package:flutter/material.dart';
+import 'package:material_design_icons_flutter/material_design_icons_flutter.dart';
 
 import 'package:peedeutsch/components/flashcard_text.dart';
 
@@ -32,9 +33,12 @@ class _FalshCardScreenState extends State<FalshCardScreen> {
     return Column(
       mainAxisAlignment: MainAxisAlignment.center,
       children: [
+        Container(
+          child: Divider(color: Colors.black),
+        ),
         SizedBox(
-          width: 300,
-          height: 400,
+          width: 350,
+          height: 550,
           child: FlipCard(
             speed: 0,
             direction: FlipDirection.VERTICAL,
@@ -49,21 +53,30 @@ class _FalshCardScreenState extends State<FalshCardScreen> {
             ),
           ),
         ),
+        SizedBox(
+          height: 30.0,
+        ),
         Row(
           mainAxisAlignment: MainAxisAlignment.spaceAround,
           children: [
-            OutlinedButton.icon(
-                onPressed: () {
-                  showPrevCar();
-                },
-                icon: const Icon(Icons.chevron_left),
-                label: const Text("Prev")),
-            OutlinedButton.icon(
-                onPressed: () {
-                  showNextCard();
-                },
-                icon: Icon(Icons.chevron_right),
-                label: Text("Next"))
+            OutlinedButton(
+              child: Icon(
+                MdiIcons.arrowLeftBold,
+                size: 50.0,
+              ),
+              onPressed: () {
+                showPrevCar();
+              },
+            ),
+            OutlinedButton(
+              child: Icon(
+                MdiIcons.arrowRightBold,
+                size: 50.0,
+              ),
+              onPressed: () {
+                showNextCard();
+              },
+            )
           ],
         )
       ],

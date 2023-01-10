@@ -8,9 +8,17 @@ class FlashcardText extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Card(
-      elevation: 5,
+      color: Colors.white,
+      shadowColor: Colors.black,
+      elevation: 10,
       child: Center(
-        child: Text(text, textAlign: TextAlign.center),
+        child: Text(
+          text,
+          textAlign: TextAlign.center,
+          style: TextStyle(
+            color: Colors.black,
+          ),
+        ),
       ),
     );
   }
