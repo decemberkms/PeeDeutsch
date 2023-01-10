@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:peedeutsch/main.dart';
+
 import 'package:peedeutsch/components/contents_holder.dart';
 import 'package:peedeutsch/vocab/vocabStorage.dart';
-import 'package:peedeutsch/screens/chapter_screen.dart';
+import 'package:peedeutsch/screens/lektion_screen.dart';
 
 class MainScreen extends StatefulWidget {
   const MainScreen({super.key});
@@ -26,7 +26,7 @@ class _MainScreenState extends State<MainScreen> {
     return Scaffold(
       appBar: AppBar(
         elevation: 5.0,
-        title: Text(
+        title: const Text(
           'Deutsch Vocab',
           style: TextStyle(
             fontSize: 25.0,
@@ -53,7 +53,7 @@ class _MainScreenState extends State<MainScreen> {
                       padding: const EdgeInsets.all(16.0),
                       child: Text(
                         entries[index],
-                        style: TextStyle(
+                        style: const TextStyle(
                           color: Colors.black,
                           fontSize: 25.0,
                         ),
@@ -69,8 +69,8 @@ class _MainScreenState extends State<MainScreen> {
                       }
                       Navigator.push(context, MaterialPageRoute(
                         builder: (context) {
-                          // Index also shows the selected Level - 0 A1, 1 A2, 2 B1
-                          return ChapterScreen(entries[index], index, vocabSet);
+                          // Index also shows the selected Level : 0->A1, 1->A2, 2->B1
+                          return LektionScreen(entries[index], index, vocabSet);
                         },
                       ));
                     },
