@@ -83,12 +83,103 @@ class VocabDict {
     ],
     'Lektion 5': [
       ContentHolder(
-          question: "What is your age age age age age age age age?",
-          answer: "13"),
-      ContentHolder(question: "What is your name?", answer: "Min"),
-      ContentHolder(question: "Where are you now?", answer: "in Germany"),
-      ContentHolder(question: "Where are you now?", answer: "in Germany"),
-      ContentHolder(question: "Where are you now?", answer: "in Germany"),
+        question: "Question",
+        answer: "13",
+      ),
+      ContentHolder(
+        question: "What is your name?",
+        answer: "Min",
+      )
+    ],
+    'Lektion 6': [
+      ContentHolder(
+        question: "Question",
+        answer: "13",
+      ),
+      ContentHolder(
+        question: "What is your name?",
+        answer: "Min",
+      )
+    ],
+    'Lektion 7': [
+      ContentHolder(
+        question: "Question",
+        answer: "13",
+      ),
+      ContentHolder(
+        question: "What is your name?",
+        answer: "Min",
+      )
+    ],
+    'Lektion 8': [
+      ContentHolder(
+        question: "Question",
+        answer: "13",
+      ),
+      ContentHolder(
+        question: "What is your name?",
+        answer: "Min",
+      )
+    ],
+    'Lektion 9': [
+      ContentHolder(
+        question: "Question",
+        answer: "13",
+      ),
+      ContentHolder(
+        question: "What is your name?",
+        answer: "Min",
+      )
+    ],
+    'Lektion 10': [
+      ContentHolder(
+        question: "Question",
+        answer: "13",
+      ),
+      ContentHolder(
+        question: "What is your name?",
+        answer: "Min",
+      )
+    ],
+    'Lektion 11': [
+      ContentHolder(
+        question: "Question",
+        answer: "13",
+      ),
+      ContentHolder(
+        question: "What is your name?",
+        answer: "Min",
+      )
+    ],
+    'Lektion 12': [
+      ContentHolder(
+        question: "Question",
+        answer: "13",
+      ),
+      ContentHolder(
+        question: "What is your name?",
+        answer: "Min",
+      )
+    ],
+    'Lektion 13': [
+      ContentHolder(
+        question: "Question",
+        answer: "13",
+      ),
+      ContentHolder(
+        question: "What is your name?",
+        answer: "Min",
+      )
+    ],
+    'Lektion 14': [
+      ContentHolder(
+        question: "Question",
+        answer: "13",
+      ),
+      ContentHolder(
+        question: "What is your name?",
+        answer: "Min",
+      )
     ]
   };
 

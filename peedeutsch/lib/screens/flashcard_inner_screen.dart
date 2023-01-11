@@ -57,7 +57,7 @@ class _FalshCardInnerScreenState extends State<FalshCardInnerScreen> {
       mainAxisAlignment: MainAxisAlignment.center,
       children: [
         Padding(
-          padding: const EdgeInsets.fromLTRB(8, 8, 8, 15),
+          padding: const EdgeInsets.fromLTRB(8, 8, 8, 20),
           child: Row(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
@@ -71,15 +71,15 @@ class _FalshCardInnerScreenState extends State<FalshCardInnerScreen> {
                   "${_currentIndex}/${widget.totalFlashCardNumber}",
                   style: TextStyle(color: Colors.black),
                 ),
-                // linearStrokeCap: LinearStrokeCap.roundAll,
-                progressColor: Colors.green,
+                barRadius: const Radius.circular(16),
+                progressColor: Colors.blue.shade500,
               ),
             ],
           ),
         ),
         SizedBox(
           width: 350,
-          height: 550,
+          height: 500,
           child: FlipCard(
             key: cardKey,
             speed: 0,
