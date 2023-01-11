@@ -4,6 +4,7 @@ import 'package:material_design_icons_flutter/material_design_icons_flutter.dart
 import 'package:percent_indicator/percent_indicator.dart';
 
 import 'package:peedeutsch/components/flashcard_content_text.dart';
+import 'package:peedeutsch/components/common_fuctions.dart';
 
 class FalshCardInnerScreen extends StatefulWidget {
   // const FalshCardScreen({super.key});
@@ -25,19 +26,15 @@ class FalshCardInnerScreen extends StatefulWidget {
 }
 
 class _FalshCardInnerScreenState extends State<FalshCardInnerScreen> {
-  void initState() {
-    // TODO: implement initState
-    widget.totalFlashCardNumber = widget._flashcards.length;
-    super.initState();
-  }
-
-  double _percentage = 0;
-
   GlobalKey<FlipCardState> cardKey = GlobalKey<FlipCardState>();
 
   bool cardIsFlipped = false;
-  void updateCardIsFlipped() => cardIsFlipped = !cardIsFlipped;
   int _currentIndex = 0;
+  double _percentage = 0;
+
+  void updateCardIsFlipped() {
+    cardIsFlipped = !cardIsFlipped;
+  }
 
   Future<void> nextQuestion() async {
     if (cardIsFlipped) {
@@ -46,6 +43,12 @@ class _FalshCardInnerScreenState extends State<FalshCardInnerScreen> {
     await Future.delayed(const Duration(milliseconds: 200), () {
       // _currentIndex++;
     }); // needs time for the flip animation to complete before moving to the next question
+  }
+
+  void initState() {
+    // TODO: implement initState
+    widget.totalFlashCardNumber = widget._flashcards.length;
+    super.initState();
   }
 
   @override
@@ -78,6 +81,7 @@ class _FalshCardInnerScreenState extends State<FalshCardInnerScreen> {
           width: 350,
           height: 550,
           child: FlipCard(
+            key: cardKey,
             speed: 0,
             direction: FlipDirection.VERTICAL,
             onFlip: () {
@@ -126,13 +130,16 @@ class _FalshCardInnerScreenState extends State<FalshCardInnerScreen> {
       // if (cardIsFlipped) {
       //   cardKey.currentState?.toggleCard();
       // }
-
+      if (cardKey.currentState != null) {
+        if (!cardKey.currentState!.isFront) {
+          cardKey.currentState!.toggleCard();
+        }
+      }
       nextQuestion();
       _currentIndex = (_currentIndex + 1 < widget._flashcards.length)
           ? _currentIndex + 1
           : 0;
       _percentage = _currentIndex / widget.totalFlashCardNumber;
-      _percentage = _percentage.toPrecision(2);
       print(_percentage);
     });
   }
@@ -144,14 +151,10 @@ class _FalshCardInnerScreenState extends State<FalshCardInnerScreen> {
           ? _currentIndex - 1
           : widget._flashcards.length - 1;
       _percentage = _currentIndex / widget.totalFlashCardNumber;
-      _percentage = _percentage.toPrecision(2);
+
       print(_percentage);
     });
   }
 
   // Right before the class scope
-}
-
-extension Ex on double {
-  double toPrecision(int n) => double.parse(toStringAsFixed(n));
 }
