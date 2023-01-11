@@ -89,9 +89,11 @@ class _FalshCardInnerScreenState extends State<FalshCardInnerScreen> {
             },
             front: FlashcardContentText(
               text: widget._flashcards[_currentIndex].question,
+              cardColor: Colors.amber,
             ),
             back: FlashcardContentText(
               text: widget._flashcards[_currentIndex].answer,
+              cardColor: Colors.blue,
             ),
           ),
         ),
