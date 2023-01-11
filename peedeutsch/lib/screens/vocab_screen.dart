@@ -21,11 +21,7 @@ class _VocabScreenState extends State<VocabScreen> {
   @override
   void initState() {
     // TODO: implement initState
-    print(widget._vocabLvl);
-    print(widget._selectedLektionIndex);
-    print(widget._selectedLektionString);
-    print(widget._selectedVocabList[0].answer);
-    print(widget._selectedVocabList[0].question);
+
     super.initState();
   }
 

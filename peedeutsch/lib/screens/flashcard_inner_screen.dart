@@ -95,14 +95,14 @@ class _FalshCardInnerScreenState extends State<FalshCardInnerScreen> {
             ),
           ),
         ),
-        SizedBox(
+        const SizedBox(
           height: 30.0,
         ),
         Row(
           mainAxisAlignment: MainAxisAlignment.spaceAround,
           children: [
             OutlinedButton(
-              child: Icon(
+              child: const Icon(
                 MdiIcons.arrowLeftBold,
                 size: 50.0,
               ),
@@ -111,7 +111,7 @@ class _FalshCardInnerScreenState extends State<FalshCardInnerScreen> {
               },
             ),
             OutlinedButton(
-              child: Icon(
+              child: const Icon(
                 MdiIcons.arrowRightBold,
                 size: 50.0,
               ),
@@ -127,9 +127,6 @@ class _FalshCardInnerScreenState extends State<FalshCardInnerScreen> {
 
   void showNextCard() {
     setState(() {
-      // if (cardIsFlipped) {
-      //   cardKey.currentState?.toggleCard();
-      // }
       if (cardKey.currentState != null) {
         if (!cardKey.currentState!.isFront) {
           cardKey.currentState!.toggleCard();
@@ -140,7 +137,6 @@ class _FalshCardInnerScreenState extends State<FalshCardInnerScreen> {
           ? _currentIndex + 1
           : 0;
       _percentage = _currentIndex / widget.totalFlashCardNumber;
-      print(_percentage);
     });
   }
 
@@ -151,8 +147,6 @@ class _FalshCardInnerScreenState extends State<FalshCardInnerScreen> {
           ? _currentIndex - 1
           : widget._flashcards.length - 1;
       _percentage = _currentIndex / widget.totalFlashCardNumber;
-
-      print(_percentage);
     });
   }
 
