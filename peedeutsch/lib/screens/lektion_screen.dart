@@ -78,11 +78,27 @@ class _LektionScreenState extends State<LektionScreen> {
                           selectedLektionNumber = 'Lektion 7';
                         } else if (index == 7) {
                           selectedLektionNumber = 'Lektion 8';
+                        } else if (index == 8) {
+                          selectedLektionNumber = 'Lektion 9';
+                        } else if (index == 9) {
+                          selectedLektionNumber = 'Lektion 10';
+                        } else if (index == 10) {
+                          selectedLektionNumber = 'Lektion 11';
+                        } else if (index == 11) {
+                          selectedLektionNumber = 'Lektion 12';
+                        } else if (index == 12) {
+                          selectedLektionNumber = 'Lektion 13';
+                        } else if (index == 13) {
+                          selectedLektionNumber = 'Lektion 14';
+                        } else if (index == 14) {
+                          selectedLektionNumber = 'Lektion 15';
                         }
+
                         Navigator.push(context, MaterialPageRoute(
                           builder: (context) {
                             // Here index is the chapter
                             return VocabScreen(
+                              widget.vocabLvl,
                               index,
                               selectedLektionNumber,
                               widget._vocabSet[selectedLektionNumber]!,

@@ -1,9 +1,10 @@
 import 'package:flutter/material.dart';
 
-class FlashcardText extends StatelessWidget {
+class FlashcardContentText extends StatelessWidget {
   final String text;
 
-  const FlashcardText({Key? key, this.text = "No text"}) : super(key: key);
+  const FlashcardContentText({Key? key, this.text = "No text"})
+      : super(key: key);
 
   @override
   Widget build(BuildContext context) {

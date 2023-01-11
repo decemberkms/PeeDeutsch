@@ -13,6 +13,7 @@ dependencies:
   cupertino_icons: ^1.0.2
   flip_card: ^0.6.0
   material_design_icons_flutter: 6.0.7096
+  percent_indicator: ^4.2.2
 
 dev_dependencies:
   flutter_test:

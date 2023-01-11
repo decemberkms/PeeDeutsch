@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 
-class FlashcardImage extends StatelessWidget {
+class FlashcardContentImage extends StatelessWidget {
   final String imageDir;
 
-  const FlashcardImage({Key? key, this.imageDir = 'No image'})
+  const FlashcardContentImage({Key? key, this.imageDir = 'No image'})
       : super(key: key);
 
   @override

@@ -1,20 +1,40 @@
 import 'package:flip_card/flip_card.dart';
 import 'package:flutter/material.dart';
 import 'package:material_design_icons_flutter/material_design_icons_flutter.dart';
+import 'package:percent_indicator/percent_indicator.dart';
 
-import 'package:peedeutsch/components/flashcard_text.dart';
+import 'package:peedeutsch/components/flashcard_content_text.dart';
 
-class FalshCardScreen extends StatefulWidget {
+class FalshCardInnerScreen extends StatefulWidget {
   // const FalshCardScreen({super.key});
-  FalshCardScreen(this._flashcards);
+  FalshCardInnerScreen(
+    this._vocabLvl,
+    this._selectedLektionIndex,
+    this._selectedLektionString,
+    this._flashcards,
+  );
+
+  final String _vocabLvl;
+  final int _selectedLektionIndex;
+  final String _selectedLektionString;
   final List _flashcards;
+  late int totalFlashCardNumber;
 
   @override
-  State<FalshCardScreen> createState() => _FalshCardScreenState();
+  State<FalshCardInnerScreen> createState() => _FalshCardInnerScreenState();
 }
 
-class _FalshCardScreenState extends State<FalshCardScreen> {
+class _FalshCardInnerScreenState extends State<FalshCardInnerScreen> {
+  void initState() {
+    // TODO: implement initState
+    widget.totalFlashCardNumber = widget._flashcards.length;
+    super.initState();
+  }
+
+  double _percentage = 0;
+
   GlobalKey<FlipCardState> cardKey = GlobalKey<FlipCardState>();
+
   bool cardIsFlipped = false;
   void updateCardIsFlipped() => cardIsFlipped = !cardIsFlipped;
   int _currentIndex = 0;
@@ -33,8 +53,26 @@ class _FalshCardScreenState extends State<FalshCardScreen> {
     return Column(
       mainAxisAlignment: MainAxisAlignment.center,
       children: [
-        Container(
-          child: Divider(color: Colors.black),
+        Padding(
+          padding: const EdgeInsets.fromLTRB(8, 8, 8, 15),
+          child: Row(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              LinearPercentIndicator(
+                width: 350,
+                // animation: true,
+                lineHeight: 20.0,
+                animationDuration: 2500,
+                percent: _percentage,
+                center: Text(
+                  "${_currentIndex}/${widget.totalFlashCardNumber}",
+                  style: TextStyle(color: Colors.black),
+                ),
+                // linearStrokeCap: LinearStrokeCap.roundAll,
+                progressColor: Colors.green,
+              ),
+            ],
+          ),
         ),
         SizedBox(
           width: 350,
@@ -45,10 +83,10 @@ class _FalshCardScreenState extends State<FalshCardScreen> {
             onFlip: () {
               updateCardIsFlipped();
             },
-            front: FlashcardText(
+            front: FlashcardContentText(
               text: widget._flashcards[_currentIndex].question,
             ),
-            back: FlashcardText(
+            back: FlashcardContentText(
               text: widget._flashcards[_currentIndex].answer,
             ),
           ),
@@ -88,10 +126,14 @@ class _FalshCardScreenState extends State<FalshCardScreen> {
       // if (cardIsFlipped) {
       //   cardKey.currentState?.toggleCard();
       // }
+
       nextQuestion();
       _currentIndex = (_currentIndex + 1 < widget._flashcards.length)
           ? _currentIndex + 1
           : 0;
+      _percentage = _currentIndex / widget.totalFlashCardNumber;
+      _percentage = _percentage.toPrecision(2);
+      print(_percentage);
     });
   }
 
@@ -101,8 +143,15 @@ class _FalshCardScreenState extends State<FalshCardScreen> {
       _currentIndex = (_currentIndex > 0)
           ? _currentIndex - 1
           : widget._flashcards.length - 1;
+      _percentage = _currentIndex / widget.totalFlashCardNumber;
+      _percentage = _percentage.toPrecision(2);
+      print(_percentage);
     });
   }
 
   // Right before the class scope
+}
+
+extension Ex on double {
+  double toPrecision(int n) => double.parse(toStringAsFixed(n));
 }

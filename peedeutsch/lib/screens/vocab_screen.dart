@@ -1,14 +1,14 @@
 import 'package:flutter/material.dart';
 
-import 'package:peedeutsch/screens/flashcard_screen.dart';
+import 'package:peedeutsch/screens/flashcard_inner_screen.dart';
 import 'package:peedeutsch/components/contents_holder.dart';
 
 class VocabScreen extends StatefulWidget {
   // const VocabScreen({super.key});
 
-  VocabScreen(this._selectedLektionIndex, this._selectedLektionString,
-      this._selectedVocabList);
-
+  VocabScreen(this._vocabLvl, this._selectedLektionIndex,
+      this._selectedLektionString, this._selectedVocabList);
+  final String _vocabLvl;
   final int _selectedLektionIndex;
   final String _selectedLektionString;
   final List<ContentHolder> _selectedVocabList;
@@ -21,6 +21,7 @@ class _VocabScreenState extends State<VocabScreen> {
   @override
   void initState() {
     // TODO: implement initState
+    print(widget._vocabLvl);
     print(widget._selectedLektionIndex);
     print(widget._selectedLektionString);
     print(widget._selectedVocabList[0].answer);
@@ -35,6 +36,10 @@ class _VocabScreenState extends State<VocabScreen> {
           elevation: 5,
           title: Text(widget._selectedLektionString),
         ),
-        body: FalshCardScreen(widget._selectedVocabList));
+        body: FalshCardInnerScreen(
+            widget._vocabLvl,
+            widget._selectedLektionIndex,
+            widget._selectedLektionString,
+            widget._selectedVocabList));
   }
 }
