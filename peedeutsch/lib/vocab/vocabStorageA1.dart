@@ -1,6 +1,6 @@
 import 'package:peedeutsch/components/contents_holder.dart';
 
-class VocabDict {
+class VocabDictA1 {
   static final Map<String, List<ContentHolder>> a1Vocab = {
     'Lektion 1': [
       ContentHolder(
@@ -100,7 +100,7 @@ class VocabDict {
       ),
       ContentHolder(
         question: "die Arbeit",
-        answer: "Arbeiten macht keinen Spaß, ist aber notwendig.",
+        answer: "Die Arbeit macht keinen Spaß, aber ist notwendig.",
       ),
       ContentHolder(
         question: "der Stift, -e",
@@ -212,8 +212,7 @@ class VocabDict {
       ),
       ContentHolder(
         question: "die Telefonnummer,-n",
-        answer:
-            "Sie können mich unter der unten stehenden Telefonnummer erreichen.",
+        answer: "Sie erreichen mich unter der Telefonnummer.",
       ),
       ContentHolder(
         question: "die Adresse,-n",

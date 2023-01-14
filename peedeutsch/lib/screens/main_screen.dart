@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
 
 import 'package:peedeutsch/components/contents_holder.dart';
-import 'package:peedeutsch/vocab/vocabStorage.dart';
+import 'package:peedeutsch/vocab/vocabStorageA1.dart';
+import 'package:peedeutsch/vocab/vocabStorageA2.dart';
+import 'package:peedeutsch/vocab/vocabStorageB1.dart';
 import 'package:peedeutsch/screens/lektion_screen.dart';
 
 class MainScreen extends StatefulWidget {
@@ -61,18 +63,67 @@ class _MainScreenState extends State<MainScreen> {
                     ),
                     onPressed: () {
                       if (index == 0) {
-                        vocabSet = VocabDict.a1Vocab;
+                        vocabSet = VocabDictA1.a1Vocab;
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                            builder: (context) {
+                              // Index also shows the selected Level : 0->A1, 1->A2, 2->B1
+                              return LektionScreen(
+                                  entries[index], index, vocabSet);
+                            },
+                          ),
+                        );
                       } else if (index == 1) {
-                        vocabSet = VocabDict.a2Vocab;
+                        // temp blocking A2
+                        showDialog<void>(
+                          context: context,
+                          builder: (BuildContext context) {
+                            return AlertDialog(
+                              title: const Text('Warnung'),
+                              content: const Text('Im Bau.'),
+                              actions: <Widget>[
+                                TextButton(
+                                  style: TextButton.styleFrom(
+                                    textStyle:
+                                        Theme.of(context).textTheme.labelLarge,
+                                  ),
+                                  child: const Text('Okay'),
+                                  onPressed: () {
+                                    Navigator.of(context).pop();
+                                  },
+                                ),
+                              ],
+                            );
+                          },
+                        );
+                        vocabSet = VocabDictA2.a2Vocab;
                       } else if (index == 2) {
-                        vocabSet = VocabDict.b1Vocab;
+                        // temp blocking B1
+                        showDialog<void>(
+                          context: context,
+                          builder: (BuildContext context) {
+                            return AlertDialog(
+                              title: const Text('Warnung'),
+                              content: const Text('Im Bau.'),
+                              actions: <Widget>[
+                                TextButton(
+                                  style: TextButton.styleFrom(
+                                    textStyle:
+                                        Theme.of(context).textTheme.labelLarge,
+                                  ),
+                                  child: const Text('Okay'),
+                                  onPressed: () {
+                                    Navigator.of(context).pop();
+                                  },
+                                ),
+                              ],
+                            );
+                          },
+                        );
+                        vocabSet = VocabDictB1.b1Vocab;
                       }
-                      Navigator.push(context, MaterialPageRoute(
-                        builder: (context) {
-                          // Index also shows the selected Level : 0->A1, 1->A2, 2->B1
-                          return LektionScreen(entries[index], index, vocabSet);
-                        },
-                      ));
+                      //navigator should be here after a2 and b1 completed
                     },
                   ),
                 ]),
