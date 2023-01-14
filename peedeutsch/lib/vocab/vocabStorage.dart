@@ -190,71 +190,75 @@ class VocabDict {
       ),
       ContentHolder(
         question: "der Euro,-s",
-        answer: "",
+        answer:
+            "Der Euro ist die offizielle Währung von 20 der 27 Mitgliedsländer der Europäischen Union.",
       ),
       ContentHolder(
         question: "richtig",
-        answer: "",
+        answer: "Was ist eine richtige Wahl?",
       ),
       ContentHolder(
         question: "kaputt",
-        answer: "",
+        answer:
+            "Sie wäre nicht zu spät gekommen, wenn ihr Auto nicht kaputt gewesen wäre",
       ),
       ContentHolder(
         question: "interessant",
-        answer: "",
+        answer: "Sein erster Film war ein interessanter Film.",
       ),
       ContentHolder(
         question: "die Vorwahl,-en",
-        answer: "",
+        answer: "Eine Vorwahl ist der Teil einer Rufnummer.",
       ),
       ContentHolder(
         question: "die Telefonnummer,-n",
-        answer: "",
+        answer:
+            "Sie können mich unter der unten stehenden Telefonnummer erreichen.",
       ),
       ContentHolder(
         question: "die Adresse,-n",
-        answer: "",
+        answer: "Diese Adresse ist falsch. Wir sind verloren.",
       ),
       ContentHolder(
         question: "die Straße,-n",
-        answer: "",
+        answer: "Pee lebt noch nicht so lange in dieser Straße.",
       ),
       ContentHolder(
         question: "die Postleitzahl,-en",
-        answer: "",
+        answer: "Manchmal vergesse ich die Postleitzahl meines Wohnortes.",
       ),
       ContentHolder(
         question: "die E-Mail-Adresse,-n",
-        answer: "",
+        answer: "Können Sie mir Ihre E-Mail-Adresse sagen?",
       ),
       ContentHolder(
         question: "die Kita,-s",
-        answer: "",
+        answer:
+            "„Kita“ steht für Kindertageseinrichtung. Für jede Altersstufe gibt es eigene Einrichtungen.",
       ),
       ContentHolder(
         question: "der Platz,\"-e",
-        answer: "",
+        answer: "Der Platz dient zum Parken.",
       ),
       ContentHolder(
         question: "frei",
-        answer: "",
+        answer: "Der Tisch war nicht frei, als er dort ankam.",
       ),
       ContentHolder(
         question: "schicken",
-        answer: "",
+        answer: "Den Brief geschickt sind sie ins Restaurant gegangen.",
       ),
       ContentHolder(
         question: "das Anmeldeformular,-e",
-        answer: "",
+        answer: "Bitte füllen Sie das Anmeldeformular aus.",
       ),
       ContentHolder(
         question: "Vielen Dank",
-        answer: "",
+        answer: "Vielen Dank im Voraus.",
       ),
       ContentHolder(
         question: "auf Wiederhören",
-        answer: "",
+        answer: "auf Wiederhören am Ende eines Telefonats.",
       ),
     ],
     'Lektion 3': [
