@@ -48,6 +48,7 @@ class _FalshCardInnerScreenState extends State<FalshCardInnerScreen> {
   void initState() {
     // TODO: implement initState
     widget.totalFlashCardNumber = widget._flashcards.length;
+    _percentage = 1 / widget.totalFlashCardNumber;
     super.initState();
   }
 
@@ -64,11 +65,11 @@ class _FalshCardInnerScreenState extends State<FalshCardInnerScreen> {
               LinearPercentIndicator(
                 width: 350,
                 // animation: true,
+                // animationDuration: 2500,
                 lineHeight: 20.0,
-                animationDuration: 2500,
                 percent: _percentage,
                 center: Text(
-                  "${_currentIndex}/${widget.totalFlashCardNumber}",
+                  "${_currentIndex + 1}/${widget.totalFlashCardNumber}",
                   style: TextStyle(color: Colors.black),
                 ),
                 barRadius: const Radius.circular(16),
@@ -89,11 +90,11 @@ class _FalshCardInnerScreenState extends State<FalshCardInnerScreen> {
             },
             front: FlashcardContentText(
               text: widget._flashcards[_currentIndex].question,
-              cardColor: Colors.amber,
+              cardColor: Color.fromARGB(255, 229, 221, 244),
             ),
             back: FlashcardContentText(
               text: widget._flashcards[_currentIndex].answer,
-              cardColor: Colors.blue,
+              cardColor: Color(0xFFE8F5E9),
             ),
           ),
         ),
@@ -109,7 +110,30 @@ class _FalshCardInnerScreenState extends State<FalshCardInnerScreen> {
                 size: 50.0,
               ),
               onPressed: () {
-                showPrevCar();
+                if (_currentIndex == 0) {
+                  showDialog<void>(
+                    context: context,
+                    builder: (BuildContext context) {
+                      return AlertDialog(
+                        title: const Text('Warnung'),
+                        content: const Text('Diese Karte ist die erste.'),
+                        actions: <Widget>[
+                          TextButton(
+                            style: TextButton.styleFrom(
+                              textStyle: Theme.of(context).textTheme.labelLarge,
+                            ),
+                            child: const Text('Okay'),
+                            onPressed: () {
+                              Navigator.of(context).pop();
+                            },
+                          ),
+                        ],
+                      );
+                    },
+                  );
+                } else {
+                  showPrevCar();
+                }
               },
             ),
             OutlinedButton(
@@ -118,7 +142,41 @@ class _FalshCardInnerScreenState extends State<FalshCardInnerScreen> {
                 size: 50.0,
               ),
               onPressed: () {
-                showNextCard();
+                if (_currentIndex == (widget.totalFlashCardNumber - 1)) {
+                  showDialog<void>(
+                    context: context,
+                    builder: (BuildContext context) {
+                      return AlertDialog(
+                        title: const Text('Warnung'),
+                        content: const Text(
+                            'Diese Karte ist die letzte. Möchten Sie zur ersten Karte zurückgehen?'),
+                        actions: <Widget>[
+                          TextButton(
+                            style: TextButton.styleFrom(
+                              textStyle: Theme.of(context).textTheme.labelLarge,
+                            ),
+                            child: const Text('Okay'),
+                            onPressed: () {
+                              showNextCard();
+                              Navigator.of(context).pop();
+                            },
+                          ),
+                          TextButton(
+                            style: TextButton.styleFrom(
+                              textStyle: Theme.of(context).textTheme.labelLarge,
+                            ),
+                            child: const Text('Nein'),
+                            onPressed: () {
+                              Navigator.of(context).pop();
+                            },
+                          ),
+                        ],
+                      );
+                    },
+                  );
+                } else {
+                  showNextCard();
+                }
               },
             )
           ],
@@ -135,20 +193,30 @@ class _FalshCardInnerScreenState extends State<FalshCardInnerScreen> {
         }
       }
       nextQuestion();
-      _currentIndex = (_currentIndex + 1 < widget._flashcards.length)
-          ? _currentIndex + 1
-          : 0;
-      _percentage = _currentIndex / widget.totalFlashCardNumber;
+      if (_currentIndex + 1 < widget._flashcards.length) {
+        _currentIndex += 1;
+      } else {
+        _currentIndex = 0;
+      }
+      // _currentIndex = (_currentIndex + 1 < widget._flashcards.length)
+      //     ? _currentIndex + 1
+      //     : 0;
+      _percentage = (_currentIndex + 1) / widget.totalFlashCardNumber;
     });
   }
 
   void showPrevCar() {
     setState(() {
       nextQuestion();
-      _currentIndex = (_currentIndex > 0)
-          ? _currentIndex - 1
-          : widget._flashcards.length - 1;
-      _percentage = _currentIndex / widget.totalFlashCardNumber;
+      if (_currentIndex > 0) {
+        _currentIndex -= 1;
+      } else {
+        _currentIndex = widget._flashcards.length - 1;
+      }
+      // _currentIndex = (_currentIndex > 0)
+      //     ? _currentIndex - 1
+      //     : widget._flashcards.length - 1;
+      _percentage = (_currentIndex + 1) / widget.totalFlashCardNumber;
     });
   }
 
