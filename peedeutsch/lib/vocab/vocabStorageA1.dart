@@ -4,60 +4,74 @@ class VocabDictA1 {
   static final Map<String, List<ContentHolder>> a1Vocab = {
     'Lektion 1': [
       ContentHolder(
-        answer: "What is your name?",
         question: "Wie heißen Sie?",
+        answer: "กหาก่หา่กฟา่",
+        type: "text",
       ),
       ContentHolder(
         answer: "Good Day!",
         question: "Guten Tag!",
+        type: "text",
       ),
       ContentHolder(
-        answer: "Where are you from?",
         question: "Woher kommst du?",
+        answer: "Where are you from?",
+        type: "text",
       ),
       ContentHolder(
-        answer: "Goodbye!",
         question: "Auf Wiedersehen!",
+        answer: "Goodbye!",
+        type: "text",
       ),
       ContentHolder(
-        answer: "Until tomorrow!",
         question: "Bis morgen!",
+        answer: "Until tomorrow!",
+        type: "text",
       ),
       ContentHolder(
-        answer: "Excuse me / I'm sorry",
         question: "Entschuldigung.",
+        answer: "Excuse me / I'm sorry",
+        type: "text",
       ),
       ContentHolder(
-        answer: "Who is that?",
         question: "Wer ist das?",
+        answer: "Who is that?",
+        type: "text",
       ),
       ContentHolder(
-        answer: "How do you write that?",
         question: "Wie schreibt man das?",
+        answer: "How do you write that?",
+        type: "text",
       ),
       ContentHolder(
-        answer: "What are you doing?",
         question: "Was machst du?",
+        answer: "What are you doing?",
+        type: "text",
       ),
       ContentHolder(
-        answer: "What is your profession?",
         question: "Was sind Sie von Beruf?",
+        answer: "What is your profession?",
+        type: "text",
       ),
       ContentHolder(
-        answer: "How are you?",
         question: "Wei geht es Ihnen?",
+        answer: "How are you?",
+        type: "text",
       ),
       ContentHolder(
-        answer: "I'm so-so.",
         question: "Es geht so.",
+        answer: "I'm so-so.",
+        type: "text",
       ),
       ContentHolder(
-        answer: "I beg your pardon?",
         question: "Wie bitte?",
+        answer: "I beg your pardon?",
+        type: "text",
       ),
       ContentHolder(
-        answer: "Bye!",
         question: "Tschüss!",
+        answer: "Bye!",
+        type: "text",
       ),
     ],
     'Lektion 2': [
@@ -115,6 +129,8 @@ class VocabDictA1 {
         question: "der Laptop,-s",
         answer:
             "Tom hat sich einen neuen Laptop gekauft, weil sein alter Laptop kaputt war.",
+        type: "image",
+        imagePath: "assets/images/a1/l2/laptop.png",
       ),
       ContentHolder(
         question: "das Tablet,-s",

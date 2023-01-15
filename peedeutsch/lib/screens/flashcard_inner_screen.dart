@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:material_design_icons_flutter/material_design_icons_flutter.dart';
 import 'package:percent_indicator/percent_indicator.dart';
 
+import 'package:peedeutsch/components/flashcard_content_image.dart';
 import 'package:peedeutsch/components/flashcard_content_text.dart';
 import 'package:peedeutsch/components/common_fuctions.dart';
 
@@ -88,10 +89,16 @@ class _FalshCardInnerScreenState extends State<FalshCardInnerScreen> {
             onFlip: () {
               updateCardIsFlipped();
             },
-            front: FlashcardContentText(
-              text: widget._flashcards[_currentIndex].question,
-              cardColor: Color.fromARGB(255, 229, 221, 244),
-            ),
+            front: (widget._flashcards[_currentIndex].type == "text")
+                ? FlashcardContentText(
+                    text: widget._flashcards[_currentIndex].question,
+                    cardColor: Color.fromARGB(255, 229, 221, 244),
+                  )
+                : FlashcardContentImage(
+                    // tpye == "image"
+                    imageDir: widget._flashcards[_currentIndex].imagePath,
+                    cardColor: Color.fromARGB(255, 229, 221, 244),
+                  ),
             back: FlashcardContentText(
               text: widget._flashcards[_currentIndex].answer,
               cardColor: Color(0xFFE8F5E9),
