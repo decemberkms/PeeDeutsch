@@ -20,6 +20,7 @@ class BackFlashcardContentText extends StatelessWidget {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
+            Text("Thai Meaning"),
             Text(
               text,
               textAlign: TextAlign.center,

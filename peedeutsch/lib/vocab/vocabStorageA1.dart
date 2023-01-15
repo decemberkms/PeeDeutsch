@@ -282,49 +282,49 @@ class VocabDictA1 {
         answer: "back side if the card flips",
         type: "text", // text or image
         // imagePath:
-        meaning: "Meaning in thai?",
+        thaiMeaning: "Meaning in thai?",
       ),
       ContentHolder(
         question: "Front page that user sees",
         answer: "back side if the card flips",
         type: "text", // text or image
         // imagePath:
-        meaning: "Meaning in thai?",
+        thaiMeaning: "Meaning in thai?",
       ),
       ContentHolder(
         question: "Front page that user sees",
         answer: "back side if the card flips",
         type: "text", // text or image
         // imagePath:
-        meaning: "Meaning in thai?",
+        thaiMeaning: "Meaning in thai?",
       ),
       ContentHolder(
         question: "Front page that user sees",
         answer: "back side if the card flips",
         type: "text", // text or image
         // imagePath:
-        meaning: "Meaning in thai?",
+        thaiMeaning: "Meaning in thai?",
       ),
       ContentHolder(
         question: "Front page that user sees",
         answer: "back side if the card flips",
         type: "text", // text or image
         // imagePath:
-        meaning: "Meaning in thai?",
+        thaiMeaning: "Meaning in thai?",
       ),
       ContentHolder(
         question: "Front page that user sees",
         answer: "back side if the card flips",
         type: "text", // text or image
         // imagePath:
-        meaning: "Meaning in thai?",
+        thaiMeaning: "Meaning in thai?",
       ),
       ContentHolder(
         question: "Front page that user sees",
         answer: "back side if the card flips",
         type: "text", // text or image
         // imagePath:
-        meaning: "Meaning in thai?",
+        thaiMeaning: "Meaning in thai?",
       ),
     ],
     'Lektion 4': [
@@ -333,14 +333,14 @@ class VocabDictA1 {
         answer: "back side if the card flips",
         type: "text", // text or image
         // imagePath:
-        meaning: "Meaning in thai?",
+        thaiMeaning: "Meaning in thai?",
       ),
       ContentHolder(
         question: "Front page that user sees",
         answer: "back side if the card flips",
         type: "text", // text or image
         // imagePath:
-        meaning: "Meaning in thai?",
+        thaiMeaning: "Meaning in thai?",
       ),
     ],
     'Lektion 5': [
@@ -349,14 +349,14 @@ class VocabDictA1 {
         answer: "back side if the card flips",
         type: "text", // text or image
         // imagePath:
-        meaning: "Meaning in thai?",
+        thaiMeaning: "Meaning in thai?",
       ),
       ContentHolder(
         question: "Front page that user sees",
         answer: "back side if the card flips",
         type: "text", // text or image
         // imagePath:
-        meaning: "Meaning in thai?",
+        thaiMeaning: "Meaning in thai?",
       ),
     ],
     'Lektion 6': [
@@ -365,7 +365,7 @@ class VocabDictA1 {
         answer: "back side if the card flips",
         type: "text", // text or image
         // imagePath:
-        meaning: "Meaning in thai?",
+        thaiMeaning: "Meaning in thai?",
       ),
     ],
     'Lektion 7': [
@@ -374,7 +374,7 @@ class VocabDictA1 {
         answer: "back side if the card flips",
         type: "text", // text or image
         // imagePath:
-        meaning: "Meaning in thai?",
+        thaiMeaning: "Meaning in thai?",
       ),
     ],
     'Lektion 8': [
@@ -383,7 +383,7 @@ class VocabDictA1 {
         answer: "back side if the card flips",
         type: "text", // text or image
         // imagePath:
-        meaning: "Meaning in thai?",
+        thaiMeaning: "Meaning in thai?",
       ),
     ],
     'Lektion 9': [
@@ -392,7 +392,7 @@ class VocabDictA1 {
         answer: "back side if the card flips",
         type: "text", // text or image
         // imagePath:
-        meaning: "Meaning in thai?",
+        thaiMeaning: "Meaning in thai?",
       ),
     ],
     'Lektion 10': [
@@ -401,7 +401,7 @@ class VocabDictA1 {
         answer: "back side if the card flips",
         type: "text", // text or image
         // imagePath:
-        meaning: "Meaning in thai?",
+        thaiMeaning: "Meaning in thai?",
       ),
     ],
     'Lektion 11': [
@@ -410,7 +410,7 @@ class VocabDictA1 {
         answer: "back side if the card flips",
         type: "text", // text or image
         // imagePath:
-        meaning: "Meaning in thai?",
+        thaiMeaning: "Meaning in thai?",
       ),
     ],
     'Lektion 12': [
@@ -419,7 +419,7 @@ class VocabDictA1 {
         answer: "back side if the card flips",
         type: "text", // text or image
         // imagePath:
-        meaning: "Meaning in thai?",
+        thaiMeaning: "Meaning in thai?",
       ),
     ],
     'Lektion 13': [
@@ -428,7 +428,7 @@ class VocabDictA1 {
         answer: "back side if the card flips",
         type: "text", // text or image
         // imagePath:
-        meaning: "Meaning in thai?",
+        thaiMeaning: "Meaning in thai?",
       ),
     ],
     'Lektion 14': [
@@ -437,7 +437,7 @@ class VocabDictA1 {
         answer: "back side if the card flips",
         type: "text", // text or image
         // imagePath:
-        meaning: "Meaning in thai?",
+        thaiMeaning: "Meaning in thai?",
       ),
     ]
   };
