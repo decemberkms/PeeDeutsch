@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 
-class FlashcardContentImage extends StatelessWidget {
+class FrontFlashcardContentImage extends StatelessWidget {
   final String imageDir;
   final Color? cardColor;
 
-  const FlashcardContentImage(
+  const FrontFlashcardContentImage(
       {Key? key, this.imageDir = 'No image', this.cardColor})
       : super(key: key);
 
