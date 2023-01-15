@@ -14,9 +14,8 @@ class FlashcardContentImage extends StatelessWidget {
       color: cardColor,
       // shadowColor: Colors.black,
       elevation: 13,
-      child: CircleAvatar(
-        backgroundImage: AssetImage(imageDir),
-        radius: 30.0,
+      child: Image.asset(
+        imageDir,
       ),
     );
   }

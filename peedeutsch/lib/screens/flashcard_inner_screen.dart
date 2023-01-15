@@ -71,7 +71,7 @@ class _FalshCardInnerScreenState extends State<FalshCardInnerScreen> {
                 percent: _percentage,
                 center: Text(
                   "${_currentIndex + 1}/${widget.totalFlashCardNumber}",
-                  style: TextStyle(color: Colors.black),
+                  style: const TextStyle(color: Colors.black),
                 ),
                 barRadius: const Radius.circular(16),
                 progressColor: Colors.blue.shade500,
@@ -92,16 +92,16 @@ class _FalshCardInnerScreenState extends State<FalshCardInnerScreen> {
             front: (widget._flashcards[_currentIndex].type == "text")
                 ? FlashcardContentText(
                     text: widget._flashcards[_currentIndex].question,
-                    cardColor: Color.fromARGB(255, 229, 221, 244),
+                    cardColor: const Color.fromARGB(255, 229, 221, 244),
                   )
                 : FlashcardContentImage(
                     // tpye == "image"
                     imageDir: widget._flashcards[_currentIndex].imagePath,
-                    cardColor: Color.fromARGB(255, 229, 221, 244),
+                    cardColor: const Color.fromARGB(255, 229, 221, 244),
                   ),
             back: FlashcardContentText(
               text: widget._flashcards[_currentIndex].answer,
-              cardColor: Color(0xFFE8F5E9),
+              cardColor: const Color(0xFFE8F5E9),
             ),
           ),
         ),

@@ -129,7 +129,7 @@ class VocabDictA1 {
         question: "der Laptop,-s",
         answer:
             "Tom hat sich einen neuen Laptop gekauft, weil sein alter Laptop kaputt war.",
-        type: "image",
+        type: "text",
         imagePath: "assets/images/a1/l2/laptop.png",
       ),
       ContentHolder(
@@ -278,174 +278,167 @@ class VocabDictA1 {
     ],
     'Lektion 3': [
       ContentHolder(
-        question: "",
-        answer: "",
+        question: "Front page that user sees",
+        answer: "back side if the card flips",
+        type: "text", // text or image
+        // imagePath:
+        meaning: "Meaning in thai?",
       ),
-      ContentHolder(question: "die Sprache,", answer: "13"),
-      ContentHolder(question: "What is your name?", answer: "Min"),
-      ContentHolder(question: "Where are you now?", answer: "in Germany"),
+      ContentHolder(
+        question: "Front page that user sees",
+        answer: "back side if the card flips",
+        type: "text", // text or image
+        // imagePath:
+        meaning: "Meaning in thai?",
+      ),
+      ContentHolder(
+        question: "Front page that user sees",
+        answer: "back side if the card flips",
+        type: "text", // text or image
+        // imagePath:
+        meaning: "Meaning in thai?",
+      ),
+      ContentHolder(
+        question: "Front page that user sees",
+        answer: "back side if the card flips",
+        type: "text", // text or image
+        // imagePath:
+        meaning: "Meaning in thai?",
+      ),
+      ContentHolder(
+        question: "Front page that user sees",
+        answer: "back side if the card flips",
+        type: "text", // text or image
+        // imagePath:
+        meaning: "Meaning in thai?",
+      ),
+      ContentHolder(
+        question: "Front page that user sees",
+        answer: "back side if the card flips",
+        type: "text", // text or image
+        // imagePath:
+        meaning: "Meaning in thai?",
+      ),
+      ContentHolder(
+        question: "Front page that user sees",
+        answer: "back side if the card flips",
+        type: "text", // text or image
+        // imagePath:
+        meaning: "Meaning in thai?",
+      ),
     ],
     'Lektion 4': [
       ContentHolder(
-          question: "What is your age age age age age age age age?",
-          answer: "13"),
-      ContentHolder(question: "What is your name?", answer: "Min"),
-      ContentHolder(question: "Where are you now?", answer: "in Germany"),
+        question: "Front page that user sees",
+        answer: "back side if the card flips",
+        type: "text", // text or image
+        // imagePath:
+        meaning: "Meaning in thai?",
+      ),
+      ContentHolder(
+        question: "Front page that user sees",
+        answer: "back side if the card flips",
+        type: "text", // text or image
+        // imagePath:
+        meaning: "Meaning in thai?",
+      ),
     ],
     'Lektion 5': [
       ContentHolder(
-        question: "Question",
-        answer: "13",
+        question: "Front page that user sees",
+        answer: "back side if the card flips",
+        type: "text", // text or image
+        // imagePath:
+        meaning: "Meaning in thai?",
       ),
       ContentHolder(
-        question: "What is your name?",
-        answer: "Min",
-      )
+        question: "Front page that user sees",
+        answer: "back side if the card flips",
+        type: "text", // text or image
+        // imagePath:
+        meaning: "Meaning in thai?",
+      ),
     ],
     'Lektion 6': [
       ContentHolder(
-        question: "Question",
-        answer: "13",
+        question: "Front page that user sees",
+        answer: "back side if the card flips",
+        type: "text", // text or image
+        // imagePath:
+        meaning: "Meaning in thai?",
       ),
-      ContentHolder(
-        question: "What is your name?",
-        answer: "Min",
-      )
     ],
     'Lektion 7': [
       ContentHolder(
-        question: "Question",
-        answer: "13",
+        question: "Front page that user sees",
+        answer: "back side if the card flips",
+        type: "text", // text or image
+        // imagePath:
+        meaning: "Meaning in thai?",
       ),
-      ContentHolder(
-        question: "What is your name?",
-        answer: "Min",
-      )
     ],
     'Lektion 8': [
       ContentHolder(
-        question: "Question",
-        answer: "13",
+        question: "Front page that user sees",
+        answer: "back side if the card flips",
+        type: "text", // text or image
+        // imagePath:
+        meaning: "Meaning in thai?",
       ),
-      ContentHolder(
-        question: "What is your name?",
-        answer: "Min",
-      )
     ],
     'Lektion 9': [
       ContentHolder(
-        question: "Question",
-        answer: "13",
+        question: "Front page that user sees",
+        answer: "back side if the card flips",
+        type: "text", // text or image
+        // imagePath:
+        meaning: "Meaning in thai?",
       ),
-      ContentHolder(
-        question: "What is your name?",
-        answer: "Min",
-      )
     ],
     'Lektion 10': [
       ContentHolder(
-        question: "Question",
-        answer: "13",
+        question: "Front page that user sees",
+        answer: "back side if the card flips",
+        type: "text", // text or image
+        // imagePath:
+        meaning: "Meaning in thai?",
       ),
-      ContentHolder(
-        question: "What is your name?",
-        answer: "Min",
-      )
     ],
     'Lektion 11': [
       ContentHolder(
-        question: "Question",
-        answer: "13",
+        question: "Front page that user sees",
+        answer: "back side if the card flips",
+        type: "text", // text or image
+        // imagePath:
+        meaning: "Meaning in thai?",
       ),
-      ContentHolder(
-        question: "What is your name?",
-        answer: "Min",
-      )
     ],
     'Lektion 12': [
       ContentHolder(
-        question: "Question",
-        answer: "13",
+        question: "Front page that user sees",
+        answer: "back side if the card flips",
+        type: "text", // text or image
+        // imagePath:
+        meaning: "Meaning in thai?",
       ),
-      ContentHolder(
-        question: "What is your name?",
-        answer: "Min",
-      )
     ],
     'Lektion 13': [
       ContentHolder(
-        question: "Question",
-        answer: "13",
+        question: "Front page that user sees",
+        answer: "back side if the card flips",
+        type: "text", // text or image
+        // imagePath:
+        meaning: "Meaning in thai?",
       ),
-      ContentHolder(
-        question: "What is your name?",
-        answer: "Min",
-      )
     ],
     'Lektion 14': [
       ContentHolder(
-        question: "Question",
-        answer: "13",
+        question: "Front page that user sees",
+        answer: "back side if the card flips",
+        type: "text", // text or image
+        // imagePath:
+        meaning: "Meaning in thai?",
       ),
-      ContentHolder(
-        question: "What is your name?",
-        answer: "Min",
-      )
-    ]
-  };
-
-  static final Map<String, List<ContentHolder>> a2Vocab = {
-    'Lektion 1': [
-      ContentHolder(
-          question: "What is your age age age age age age age age?",
-          answer: "13"),
-      ContentHolder(question: "What is your name?", answer: "Min"),
-      ContentHolder(question: "Where are you now?", answer: "in Germany"),
-    ],
-    'Lektion 2': [
-      ContentHolder(
-          question: "What is your age age age age age age age age?",
-          answer: "13"),
-      ContentHolder(question: "What is your name?", answer: "Min"),
-      ContentHolder(question: "Where are you now?", answer: "in Germany"),
-    ],
-    'Lektion 3': [
-      ContentHolder(
-          question: "What is your age age age age age age age age?",
-          answer: "13"),
-      ContentHolder(question: "What is your name?", answer: "Min"),
-      ContentHolder(question: "Where are you now?", answer: "in Germany"),
-    ],
-    'Lektion 4': [
-      ContentHolder(
-          question: "What is your age age age age age age age age?",
-          answer: "13"),
-      ContentHolder(question: "What is your name?", answer: "Min"),
-      ContentHolder(question: "Where are you now?", answer: "in Germany"),
-    ]
-  };
-
-  static final Map<String, List<ContentHolder>> b1Vocab = {
-    'Lektion 1': [
-      ContentHolder(
-          question: "What is your age age age age age age age age?",
-          answer: "13"),
-      ContentHolder(question: "What is your name?", answer: "Min"),
-      ContentHolder(question: "Where are you now?", answer: "in Germany"),
-    ],
-    'Lektion 2': [
-      ContentHolder(
-          question: "What is your age age age age age age age age?",
-          answer: "13"),
-      ContentHolder(question: "What is your name?", answer: "Min"),
-      ContentHolder(question: "Where are you now?", answer: "in Germany"),
-    ],
-    'Lektion 3': [
-      ContentHolder(
-          question: "What is your age age age age age age age age?",
-          answer: "13"),
-      ContentHolder(question: "What is your name?", answer: "Min"),
-      ContentHolder(question: "Where are you now?", answer: "in Germany"),
     ]
   };
 }

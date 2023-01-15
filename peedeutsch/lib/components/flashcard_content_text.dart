@@ -19,7 +19,7 @@ class FlashcardContentText extends StatelessWidget {
         child: Text(
           text,
           textAlign: TextAlign.center,
-          style: TextStyle(
+          style: const TextStyle(
             color: Colors.black,
             fontSize: 23.0,
           ),
