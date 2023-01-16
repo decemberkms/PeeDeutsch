@@ -1,9 +1,10 @@
 class ContentHolder {
   final String itsName;
-  final String answer;
-  final String type;
   final String imagePath;
+
+  final String type; // "image" or "text"
   final String thaiMeaning;
+  final String answer; // example
 
   ContentHolder({
     this.itsName = "no question",
