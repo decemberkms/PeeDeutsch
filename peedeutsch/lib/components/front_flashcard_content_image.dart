@@ -14,8 +14,11 @@ class FrontFlashcardContentImage extends StatelessWidget {
       color: cardColor,
       // shadowColor: Colors.black,
       elevation: 13,
-      child: Image.asset(
-        imageDir,
+      child: CircleAvatar(
+        backgroundColor: Color(0XFFE0F2F1),
+        child: Image.asset(
+          imageDir,
+        ),
       ),
     );
   }

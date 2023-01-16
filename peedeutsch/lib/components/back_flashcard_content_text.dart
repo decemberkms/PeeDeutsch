@@ -32,14 +32,24 @@ class BackFlashcardContentText extends StatelessWidget {
               ),
             ),
             SizedBox(
-              height: 20.0,
+              height: 50.0,
             ),
             Text(
-              text,
-              textAlign: TextAlign.center,
-              style: const TextStyle(
+              "Beispiel",
+              style: TextStyle(
+                fontSize: 23,
                 color: Colors.black,
-                fontSize: 23.0,
+              ),
+            ),
+            Padding(
+              padding: const EdgeInsets.fromLTRB(12.0, 12.0, 12.0, 0),
+              child: Text(
+                text,
+                textAlign: TextAlign.left,
+                style: const TextStyle(
+                  color: Colors.black,
+                  fontSize: 17.0,
+                ),
               ),
             ),
           ],

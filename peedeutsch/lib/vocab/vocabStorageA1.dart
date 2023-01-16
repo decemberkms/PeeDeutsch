@@ -76,25 +76,29 @@ class VocabDictA1 {
     ],
     'Lektion 2': [
       ContentHolder(
-        itsName: "die Heimat",
+        itsName: "die Heimat,-en",
         answer: "Seine Heimat ist friedlich und ruhig.",
         type: "text",
+        thaiMeaning: "ไฮมัต",
       ),
       ContentHolder(
         itsName: "die Sprache,-n",
         answer: "Sie spricht drei Sprachen.",
         type: "text",
+        thaiMeaning: "สปราเช่",
       ),
       ContentHolder(
         itsName: "die Nationalität,-en",
         answer: "Sie können Ihre Nationalität ändern.",
         type: "text",
+        thaiMeaning: "สัญชาติ",
       ),
       ContentHolder(
         itsName: "die Muttersprache,-n",
         answer:
             "Einigen Untersuchungen zufolge beeinflusst die Muttersprache unsere Denkweise.",
         type: "text",
+        thaiMeaning: "มัตเตอร์สปราเช่",
       ),
       ContentHolder(
         itsName: "arbeiten",
@@ -142,6 +146,7 @@ class VocabDictA1 {
         answer:
             "Tom hat sich einen neuen Laptop gekauft, weil sein alter Laptop kaputt war.",
         type: "image",
+        thaiMeaning: "แล็ปท็อป",
         imagePath: "assets/images/a1/l2/laptop.png",
       ),
       ContentHolder(

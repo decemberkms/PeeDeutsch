@@ -102,6 +102,7 @@ class _FalshCardInnerScreenState extends State<FalshCardInnerScreen> {
             back: BackFlashcardContentText(
               text: widget._flashcards[_currentIndex].answer,
               cardColor: const Color(0xFFE8F5E9),
+              thaiMeaning: widget._flashcards[_currentIndex].thaiMeaning,
             ),
           ),
         ),
