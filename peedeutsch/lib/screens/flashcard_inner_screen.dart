@@ -91,7 +91,7 @@ class _FalshCardInnerScreenState extends State<FalshCardInnerScreen> {
             },
             front: (widget._flashcards[_currentIndex].type == "text")
                 ? FrontFlashcardContentText(
-                    text: widget._flashcards[_currentIndex].question,
+                    text: widget._flashcards[_currentIndex].itsName,
                     cardColor: const Color.fromARGB(255, 229, 221, 244),
                   )
                 : FrontFlashcardContentImage(

@@ -5,9 +5,13 @@ class BackFlashcardContentText extends StatelessWidget {
 
   final Color? cardColor;
   final String text;
+  final String thaiMeaning;
 
   const BackFlashcardContentText(
-      {Key? key, this.cardColor, this.text = "No text"})
+      {Key? key,
+      this.cardColor,
+      this.text = "No text",
+      this.thaiMeaning = "None"})
       : super(key: key);
 
   @override
@@ -20,7 +24,16 @@ class BackFlashcardContentText extends StatelessWidget {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            Text("Thai Meaning"),
+            Text(
+              thaiMeaning,
+              style: const TextStyle(
+                color: Colors.black,
+                fontSize: 23.0,
+              ),
+            ),
+            SizedBox(
+              height: 20.0,
+            ),
             Text(
               text,
               textAlign: TextAlign.center,
