@@ -730,7 +730,7 @@ class VocabDictA1 {
             "Sein Vater war ebenfalls kriminell.", //back side if the card flips
         type: "text", // text or image
         // imagePath:
-        thaiMeaning: "", //Meaning in thai?
+        thaiMeaning: "พ่อ", //Meaning in thai?
       ),
       ContentHolder(
         itsName: "die Mutter,\"-", // Front page that user sees
@@ -738,7 +738,7 @@ class VocabDictA1 {
             "Sie ist die Mutter von zwei Kindern.", //back side if the card flips
         type: "text", // text or image
         // imagePath:
-        thaiMeaning: "", //Meaning in thai?
+        thaiMeaning: "แม่", //Meaning in thai?
       ),
       ContentHolder(
         itsName: "die Eltern,Pl.", // Front page that user sees
@@ -746,7 +746,7 @@ class VocabDictA1 {
             "Sie waren ihrem Sohn stets liebevolle Eltern.", //back side if the card flips
         type: "text", // text or image
         // imagePath:
-        thaiMeaning: "", //Meaning in thai?
+        thaiMeaning: "พ่อ แม่", //Meaning in thai?
       ),
       ContentHolder(
         itsName: "der Bruder,\"-", // Front page that user sees
@@ -754,14 +754,14 @@ class VocabDictA1 {
             "Der Bruder kümmert sich um die Schwester.", //back side if the card flips
         type: "text", // text or image
         // imagePath:
-        thaiMeaning: "", //Meaning in thai?
+        thaiMeaning: "ภราดร", //Meaning in thai?
       ),
       ContentHolder(
         itsName: "die Schwester,-n", // Front page that user sees
         answer: "Beide Schwestern waren dort.", //back side if the card flips
         type: "text", // text or image
         // imagePath:
-        thaiMeaning: "", //Meaning in thai?
+        thaiMeaning: "น้องสาว", //Meaning in thai?
       ),
       ContentHolder(
         itsName: "die Geschwister,Pl.", // Front page that user sees
@@ -769,7 +769,7 @@ class VocabDictA1 {
             "Meine Geschwister sind in alle Welt verstreut.", //back side if the card flips
         type: "text", // text or image
         // imagePath:
-        thaiMeaning: "", //Meaning in thai?
+        thaiMeaning: "น้อง", //Meaning in thai?
       ),
       ContentHolder(
         itsName: "der Onkel,-", // Front page that user sees
@@ -777,7 +777,7 @@ class VocabDictA1 {
             "Diese Armbanduhr habe ich von meinem Onkel bekommen.", //back side if the card flips
         type: "text", // text or image
         // imagePath:
-        thaiMeaning: "", //Meaning in thai?
+        thaiMeaning: "ลุง", //Meaning in thai?
       ),
       ContentHolder(
         itsName: "die Tante,-n", // Front page that user sees
@@ -785,21 +785,21 @@ class VocabDictA1 {
             "Die Tante hat einige Jahre lang die Mutterrolle übernommen.", //back side if the card flips
         type: "text", // text or image
         // imagePath:
-        thaiMeaning: "", //Meaning in thai?
+        thaiMeaning: "น้า", //Meaning in thai?
       ),
       ContentHolder(
         itsName: "der Sohn,\"-e", // Front page that user sees
         answer: "Sein Sohn ist acht Jahre alt.", //back side if the card flips
         type: "text", // text or image
         // imagePath:
-        thaiMeaning: "", //Meaning in thai?
+        thaiMeaning: "ลูกชาย", //Meaning in thai?
       ),
       ContentHolder(
         itsName: "die Tochter,\"-", // Front page that user sees
         answer: "Ihre Tochter ist bildhübsch.", //back side if the card flips
         type: "text", // text or image
         // imagePath:
-        thaiMeaning: "", //Meaning in thai?
+        thaiMeaning: "ลูกสาว", //Meaning in thai?
       ),
       ContentHolder(
         itsName: "das Foto,-s", // Front page that user sees
@@ -807,7 +807,7 @@ class VocabDictA1 {
             "Wir zeigten ihm ein paar Foto von den Alpen.", //back side if the card flips
         type: "text", // text or image
         // imagePath:
-        thaiMeaning: "", //Meaning in thai?
+        thaiMeaning: "ภาพถ่าย", //Meaning in thai?
       ),
       ContentHolder(
         itsName: "zu Hause", // Front page that user sees
@@ -815,7 +815,7 @@ class VocabDictA1 {
             "Er war gestern den ganzen Abend bei mir zu Hause.", //back side if the card flips
         type: "text", // text or image
         // imagePath:
-        thaiMeaning: "", //Meaning in thai?
+        thaiMeaning: "ที่บ้าน", //Meaning in thai?
       ),
       ContentHolder(
         itsName: "studieren", // Front page that user sees
@@ -823,7 +823,7 @@ class VocabDictA1 {
             "Lisa studiert im 8. Semester Jura. ", //back side if the card flips
         type: "text", // text or image
         // imagePath:
-        thaiMeaning: "", //Meaning in thai?
+        thaiMeaning: "ศึกษา", //Meaning in thai?
       ),
       ContentHolder(
         itsName: "die Freizeit,Sg.", // Front page that user sees
@@ -831,14 +831,14 @@ class VocabDictA1 {
             "In meiner Freizeit treibe ich Sport.", //back side if the card flips
         type: "text", // text or image
         // imagePath:
-        thaiMeaning: "", //Meaning in thai?
+        thaiMeaning: "เวลาว่าง", //Meaning in thai?
       ),
       ContentHolder(
         itsName: "die Familie,-n", // Front page that user sees
         answer: "Unser Hund gehört zur Familie.", //back side if the card flips
         type: "text", // text or image
         // imagePath:
-        thaiMeaning: "", //Meaning in thai?
+        thaiMeaning: "ครอบครัว", //Meaning in thai?
       ),
       ContentHolder(
         itsName: "faulenzen", // Front page that user sees
@@ -846,7 +846,7 @@ class VocabDictA1 {
             "Im Urlaub haben wir fast nur gefaulenzt.", //back side if the card flips
         type: "text", // text or image
         // imagePath:
-        thaiMeaning: "", //Meaning in thai?
+        thaiMeaning: "นั่งเล่นรอบๆ", //Meaning in thai?
       ),
       ContentHolder(
         itsName: "schlafen", // Front page that user sees
@@ -854,7 +854,7 @@ class VocabDictA1 {
             "Lisa schläft schon seit gestern Nachmittag.", //back side if the card flips
         type: "text", // text or image
         // imagePath:
-        thaiMeaning: "", //Meaning in thai?
+        thaiMeaning: "นอน", //Meaning in thai?
       ),
       ContentHolder(
         itsName: "essen", // Front page that user sees
