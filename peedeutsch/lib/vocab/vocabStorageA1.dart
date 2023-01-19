@@ -835,7 +835,7 @@ class VocabDictA1 {
       ),
       ContentHolder(
         itsName: "die Familie,-n", // Front page that user sees
-        answer: "Unser Hund gehört zur Familie.", //back side if the card flips
+        answer: "Unser Hund gehört zur Familie.", //back side if thfe card flips
         type: "text", // text or image
         // imagePath:
         thaiMeaning: "ครอบครัว", //Meaning in thai?
@@ -1075,46 +1075,435 @@ class VocabDictA1 {
     ],
     'Lektion 5': [
       ContentHolder(
-        itsName: "", // Front page that user sees
-        answer: "", //back side if the card flips
-        type: "text", // text or image
-        // imagePath:
-        thaiMeaning: "", //Meaning in thai?
-      ),
-      ContentHolder(
-        itsName: "", // Front page that user sees
-        answer: "", //back side if the card flips
-        type: "text", // text or image
-        // imagePath:
-        thaiMeaning: "", //Meaning in thai?
-      ),
-      ContentHolder(
-        itsName: "der Vater,\"-", // Front page that user sees
+        itsName: "Fußball spielen", // Front page that user sees
         answer:
-            "Sein Vater war ebenfalls kriminell.", //back side if the card flips
+            "Ich werde morgen Fußball spielen.", //back side if the card flips
         type: "text", // text or image
         // imagePath:
         thaiMeaning: "", //Meaning in thai?
       ),
       ContentHolder(
-        itsName: "die Mutter,\"-", // Front page that user sees
+        itsName: "joggen", // Front page that user sees
+        answer: "Ich gehe gern joggen.", //back side if the card flips
+        type: "text", // text or image
+        // imagePath:
+        thaiMeaning: "", //Meaning in thai?
+      ),
+      ContentHolder(
+        itsName: "ein Bild malen", // Front page that user sees
+        answer: "Ich male eine Landschaft.", //back side if the card flips
+        type: "text", // text or image
+        // imagePath:
+        thaiMeaning: "", //Meaning in thai?
+      ),
+      ContentHolder(
+        itsName: "tanzen", // Front page that user sees
+        answer: "Lisa tanzt sehr gut.", //back side if the card flips
+        type: "text", // text or image
+        // imagePath:
+        thaiMeaning: "", //Meaning in thai?
+      ),
+      ContentHolder(
+        itsName: "im Internet surfen", // Front page that user sees
         answer:
-            "Sie ist die Mutter von zwei Kindern.", //back side if the card flips
+            "Ich könnte wirklich stundenlang im Internet surfen, um mir Anregungen zu holen.", //back side if the card flips
         type: "text", // text or image
         // imagePath:
         thaiMeaning: "", //Meaning in thai?
       ),
       ContentHolder(
-        itsName: "die Eltern,Pl.", // Front page that user sees
+        itsName: "grillen", // Front page that user sees
         answer:
-            "Sie waren ihrem Sohn stets liebevolle Eltern.", //back side if the card flips
+            "Bei schönem Wetter grillen wir häufig im Garten.", //back side if the card flips
         type: "text", // text or image
         // imagePath:
         thaiMeaning: "", //Meaning in thai?
       ),
       ContentHolder(
-        itsName: "", // Front page that user sees
-        answer: "", //back side if the card flips
+        itsName: "Musik hören", // Front page that user sees
+        answer: "Ich hörte französische Musik.", //back side if the card flips
+        type: "text", // text or image
+        // imagePath:
+        thaiMeaning: "", //Meaning in thai?
+      ),
+      ContentHolder(
+        itsName: "schwimmen", // Front page that user sees
+        answer:
+            "Der Teich ist zu flach , um darin schwimmen zu können ", //back side if the card flips
+        type: "text", // text or image
+        // imagePath:
+        thaiMeaning: "", //Meaning in thai?
+      ),
+      ContentHolder(
+        itsName: "das Hobby,-s", // Front page that user sees
+        answer: "Mein Hobby ist Philosophie.", //back side if the card flips
+        type: "text", // text or image
+        // imagePath:
+        thaiMeaning: "", //Meaning in thai?
+      ),
+      ContentHolder(
+        itsName: "spät", // Front page that user sees
+        answer: "Wie spät ist es?", //back side if the card flips
+        type: "text", // text or image
+        // imagePath:
+        thaiMeaning: "", //Meaning in thai?
+      ),
+      ContentHolder(
+        itsName: "halb", // Front page that user sees
+        answer: "Wir haben uns halb totgelacht.", //back side if the card flips
+        type: "text", // text or image
+        // imagePath:
+        thaiMeaning: "", //Meaning in thai?
+      ),
+      ContentHolder(
+        itsName: "Viertel vor", // Front page that user sees
+        answer:
+            "In der Stadt ist es Viertel vor zwölf.", //back side if the card flips
+        type: "text", // text or image
+        // imagePath:
+        thaiMeaning: "", //Meaning in thai?
+      ),
+      ContentHolder(
+        itsName: "Viertel nach", // Front page that user sees
+        answer:
+            "Ich bin bis viertel nach zwei liegen geblieben.", //back side if the card flips
+        type: "text", // text or image
+        // imagePath:
+        thaiMeaning: "", //Meaning in thai?
+      ),
+      ContentHolder(
+        itsName: "beginnen", // Front page that user sees
+        answer: "Es beginnt zu regnen.", //back side if the card flips
+        type: "text", // text or image
+        // imagePath:
+        thaiMeaning: "", //Meaning in thai?
+      ),
+      ContentHolder(
+        itsName: "enden", // Front page that user sees
+        answer:
+            "Das Konzert endete mit zwei Zugaben.", //back side if the card flips
+        type: "text", // text or image
+        // imagePath:
+        thaiMeaning: "", //Meaning in thai?
+      ),
+      ContentHolder(
+        itsName: "gehen", // Front page that user sees
+        answer:
+            "Ich gehe für ein Jahr ins Ausland", //back side if the card flips
+        type: "text", // text or image
+        // imagePath:
+        thaiMeaning: "", //Meaning in thai?
+      ),
+      ContentHolder(
+        itsName: "von ... bis", // Front page that user sees
+        answer:
+            "Das Geschäft ist von Montag bis Freitag geöffnet.", //back side if the card flips
+        type: "text", // text or image
+        // imagePath:
+        thaiMeaning: "", //Meaning in thai?
+      ),
+      ContentHolder(
+        itsName: "die Pause,-n", // Front page that user sees
+        answer: "Ich plädiere für eine Pause.", //back side if the card flips
+        type: "text", // text or image
+        // imagePath:
+        thaiMeaning: "", //Meaning in thai?
+      ),
+      ContentHolder(
+        itsName: "der Zug,\"-e", // Front page that user sees
+        answer:
+            "Tom hat den letzten Zug nach Hause verpasst.", //back side if the card flips
+        type: "text", // text or image
+        // imagePath:
+        thaiMeaning: "", //Meaning in thai?
+      ),
+      ContentHolder(
+        itsName: "der Radiowecker,-", // Front page that user sees
+        answer:
+            "Jeden Morgen werde ich von meinem Radiowecker mit Musik geweckt.", //back side if the card flips
+        type: "text", // text or image
+        // imagePath:
+        thaiMeaning: "", //Meaning in thai?
+      ),
+      ContentHolder(
+        itsName: "klingeln", // Front page that user sees
+        answer:
+            "Der Wecker klingelt jeden Morgen um sechs Uhr.", //back side if the card flips
+        type: "text", // text or image
+        // imagePath:
+        thaiMeaning: "", //Meaning in thai?
+      ),
+      ContentHolder(
+        itsName: "das Flugzeug,-e", // Front page that user sees
+        answer:
+            "Wir werden mit unserem Programm diverse Flugzeuge bauen und mit denen anschließend fliegen.", //back side if the card flips
+        type: "text", // text or image
+        // imagePath:
+        thaiMeaning: "", //Meaning in thai?
+      ),
+      ContentHolder(
+        itsName: "der Krimi,-s", // Front page that user sees
+        answer:
+            "Wir waren heute im Kino und haben uns einen spannenden Krimi angesehen.", //back side if the card flips
+        type: "text", // text or image
+        // imagePath:
+        thaiMeaning: "", //Meaning in thai?
+      ),
+      ContentHolder(
+        itsName: "an|rufen", // Front page that user sees
+        answer: "Man sollte einen Arzt rufen.", //back side if the card flips
+        type: "text", // text or image
+        // imagePath:
+        thaiMeaning: "", //Meaning in thai?
+      ),
+      ContentHolder(
+        itsName: "das Kino,-s", // Front page that user sees
+        answer: "Lasst uns ins Kino gehen!", //back side if the card flips
+        type: "text", // text or image
+        // imagePath:
+        thaiMeaning: "", //Meaning in thai?
+      ),
+      ContentHolder(
+        itsName: "an|fangen", // Front page that user sees
+        answer:
+            "Ich fange um 8 Uhr an, zu arbeiten.", //back side if the card flips
+        type: "text", // text or image
+        // imagePath:
+        thaiMeaning: "", //Meaning in thai?
+      ),
+      ContentHolder(
+        itsName: "auf|hören", // Front page that user sees
+        answer:
+            "Ich habe aufgehört zu lernen, weil ich müde war.", //back side if the card flips
+        type: "text", // text or image
+        // imagePath:
+        thaiMeaning: "", //Meaning in thai?
+      ),
+      ContentHolder(
+        itsName: "auf|stehen", // Front page that user sees
+        answer:
+            "Normalerweise stehe ich gegen sieben Uhr auf.", //back side if the card flips
+        type: "text", // text or image
+        // imagePath:
+        thaiMeaning: "", //Meaning in thai?
+      ),
+      ContentHolder(
+        itsName: "auf|räumen", // Front page that user sees
+        answer:
+            "Ich muss im Keller ein bisschen aufräumen.", //back side if the card flips
+        type: "text", // text or image
+        // imagePath:
+        thaiMeaning: "", //Meaning in thai?
+      ),
+      ContentHolder(
+        itsName: "ein|kaufen", // Front page that user sees
+        answer:
+            "Ich muss noch ein bisschen Obst und Gemüse einkaufen.", //back side if the card flips
+        type: "text", // text or image
+        // imagePath:
+        thaiMeaning: "", //Meaning in thai?
+      ),
+      ContentHolder(
+        itsName: "mit|nehmen", // Front page that user sees
+        answer:
+            "Nehmt ihr euren Hund mit in den Urlaub?", //back side if the card flips
+        type: "text", // text or image
+        // imagePath:
+        thaiMeaning: "", //Meaning in thai?
+      ),
+      ContentHolder(
+        itsName: "die Zeitung,-en", // Front page that user sees
+        answer:
+            "In dieser überregionalen Zeitung erscheint an jedem Wochenende ein Gastkommentar.", //back side if the card flips
+        type: "text", // text or image
+        // imagePath:
+        thaiMeaning: "", //Meaning in thai?
+      ),
+      ContentHolder(
+        itsName: "fern|sehen", // Front page that user sees
+        answer:
+            "Mach deine Hausaufgaben , bevor du fernsiehst.", //back side if the card flips
+        type: "text", // text or image
+        // imagePath:
+        thaiMeaning: "", //Meaning in thai?
+      ),
+      ContentHolder(
+        itsName: "aus|gehen", // Front page that user sees
+        answer:
+            "Ich möchte heute Abend ausgehen.", //back side if the card flips
+        type: "text", // text or image
+        // imagePath:
+        thaiMeaning: "", //Meaning in thai?
+      ),
+      ContentHolder(
+        itsName: "weg|fahren", // Front page that user sees
+        answer:
+            "Er ist mit seinem LKW weggefahren.", //back side if the card flips
+        type: "text", // text or image
+        // imagePath:
+        thaiMeaning: "", //Meaning in thai?
+      ),
+      ContentHolder(
+        itsName: "mit|kommen", // Front page that user sees
+        answer: "Ich kann nicht mitkommen.", //back side if the card flips
+        type: "text", // text or image
+        // imagePath:
+        thaiMeaning: "", //Meaning in thai?
+      ),
+      ContentHolder(
+        itsName: "statt|finden", // Front page that user sees
+        answer:
+            "Das Fußballspiel kann wegen des schlechten Wetters nicht stattfinden.", //back side if the card flips
+        type: "text", // text or image
+        // imagePath:
+        thaiMeaning: "", //Meaning in thai?
+      ),
+      ContentHolder(
+        itsName: "aus|fallen", // Front page that user sees
+        answer:
+            "Das Konzert muss wegen Erkrankung des Solisten ausfallen", //back side if the card flips
+        type: "text", // text or image
+        // imagePath:
+        thaiMeaning: "", //Meaning in thai?
+      ),
+      ContentHolder(
+        itsName: "spazieren gehen", // Front page that user sees
+        answer:
+            "Mein Arzt empfiehlt mir, zur schnelleren Genesung, jeden Tag eine Stunde spazieren zu gehen.", //back side if the card flips
+        type: "text", // text or image
+        // imagePath:
+        thaiMeaning: "", //Meaning in thai?
+      ),
+      ContentHolder(
+        itsName: "jeden Tag", // Front page that user sees
+        answer:
+            "Ich fahre jeden Tag mit dem Fahrrad zur Schule.", //back side if the card flips
+        type: "text", // text or image
+        // imagePath:
+        thaiMeaning: "", //Meaning in thai?
+      ),
+      ContentHolder(
+        itsName: "der Ausflug,\"-e", // Front page that user sees
+        answer:
+            "Ich nehme dich auf einen Ausflug mit , wenn ich Zeit habe.", //back side if the card flips
+        type: "text", // text or image
+        // imagePath:
+        thaiMeaning: "", //Meaning in thai?
+      ),
+      ContentHolder(
+        itsName: "die Hausaufgabe,-n", // Front page that user sees
+        answer:
+            "Nach dem Mittagessen , wenn all meine Hausaufgaben erledigt sind , gehe ich mit Eva spazieren.", //back side if the card flips
+        type: "text", // text or image
+        // imagePath:
+        thaiMeaning: "", //Meaning in thai?
+      ),
+      ContentHolder(
+        itsName: "das Fahrrad,\"-er", // Front page that user sees
+        answer:
+            "Du kannst mit irgendeinem der hier stehenden Fahrräder fahren.", //back side if the card flips
+        type: "text", // text or image
+        // imagePath:
+        thaiMeaning: "", //Meaning in thai?
+      ),
+      ContentHolder(
+        itsName: "reparieren", // Front page that user sees
+        answer:
+            "Ist der kaputte Schrank schon repariert worden?", //back side if the card flips
+        type: "text", // text or image
+        // imagePath:
+        thaiMeaning: "", //Meaning in thai?
+      ),
+      ContentHolder(
+        itsName: "am Morgen", // Front page that user sees
+        answer:
+            "Das Laufen am Morgen gibt mir einen Energieschub.", //back side if the card flips
+        type: "text", // text or image
+        // imagePath:
+        thaiMeaning: "", //Meaning in thai?
+      ),
+      ContentHolder(
+        itsName: "am Vormittag", // Front page that user sees
+        answer:
+            "Am Vormittag möchte ich mit dir einkaufen gehen.", //back side if the card flips
+        type: "text", // text or image
+        // imagePath:
+        thaiMeaning: "", //Meaning in thai?
+      ),
+      ContentHolder(
+        itsName: "in der Nacht", // Front page that user sees
+        answer:
+            "Menschen mussten beispielsweise noch in der Nacht ihren Schlafort wechseln.", //back side if the card flips
+        type: "text", // text or image
+        // imagePath:
+        thaiMeaning: "", //Meaning in thai?
+      ),
+      ContentHolder(
+        itsName: "die Fahrkarte,-n", // Front page that user sees
+        answer:
+            "Wir haben unsere Fahrkarten am Schalter gekauft.", //back side if the card flips
+        type: "text", // text or image
+        // imagePath:
+        thaiMeaning: "", //Meaning in thai?
+      ),
+      ContentHolder(
+        itsName: "der Dienstagabend,-e", // Front page that user sees
+        answer:
+            "Diese Woche kannst du am Dienstagabend ausgehen.", //back side if the card flips
+        type: "text", // text or image
+        // imagePath:
+        thaiMeaning: "", //Meaning in thai?
+      ),
+      ContentHolder(
+        itsName: "Schach spielen", // Front page that user sees
+        answer:
+            "Tom geht dort oft Schach spielen.", //back side if the card flips
+        type: "text", // text or image
+        // imagePath:
+        thaiMeaning: "", //Meaning in thai?
+      ),
+      ContentHolder(
+        itsName: "zusammen", // Front page that user sees
+        answer: "Wir sind wieder zusammen.", //back side if the card flips
+        type: "text", // text or image
+        // imagePath:
+        thaiMeaning: "", //Meaning in thai?
+      ),
+      ContentHolder(
+        itsName: "vielleicht", // Front page that user sees
+        answer:
+            "Vielleicht hatte ich Unrecht. Mag sein!", //back side if the card flips
+        type: "text", // text or image
+        // imagePath:
+        thaiMeaning: "", //Meaning in thai?
+      ),
+      ContentHolder(
+        itsName: "Lust haben", // Front page that user sees
+        answer:
+            "Ich hatte Lust, spazieren zu gehen.", //back side if the card flips
+        type: "text", // text or image
+        // imagePath:
+        thaiMeaning: "", //Meaning in thai?
+      ),
+      ContentHolder(
+        itsName: "Zeit haben", // Front page that user sees
+        answer:
+            "Ich weiß nicht, ob ich morgen Zeit habe.", //back side if the card flips
+        type: "text", // text or image
+        // imagePath:
+        thaiMeaning: "", //Meaning in thai?
+      ),
+      ContentHolder(
+        itsName: "leider", // Front page that user sees
+        answer:
+            "Die Übungsstunden müssen leider wegfallen.", //back side if the card flips
+        type: "text", // text or image
+        // imagePath:
+        thaiMeaning: "", //Meaning in thai?
+      ),
+      ContentHolder(
+        itsName: "kochen", // Front page that user sees
+        answer: "Ich koche heute Abend Gulasch.", //back side if the card flips
         type: "text", // text or image
         // imagePath:
         thaiMeaning: "", //Meaning in thai?
